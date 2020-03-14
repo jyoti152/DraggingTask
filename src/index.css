@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  /* background: rgb(236, 167, 167); */
+  height: 100vh;
+  width: 100%;
+  
+}
+.pending-container{
+  background: green;
+  /* margin-left: 30px;
+  margin-top: 50px; 
+  */
+  width: 50%;
+  height: 100vh;  
+}
+.compleated-container
+{
+  background: blue;
+  /* width: 100px;
+  height: 100vh;
+  margin-top: 50px; */
+  width: 50%; 
+ height: 100vh;
+}
+.container {
+  /* width: 600px; */
+  height: 100vh;
+
+  border: 4px solid;
+  overflow: hidden;
+  position: relative;
+}
+.container:active {
+  background: #fbfafa;
+}
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+  background: #f1ecec;
+}
+.circle:active {
+  background: #c4ffb1;
+}
+.boxesGroup {
+  /* main layout to display nested boxes */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  place-items: center;
+  /* decorating */
+  background-color: lightgrey;
+  /* drag style */
+  cursor: default;
+}
+
+.box {
+  /* nested boxes */
+  
+  /* drag style */
+  cursor: move;
+}
+
+.content {
+  /* centering content in box */
+  height: 100px;
+width:100px;
+}
+
